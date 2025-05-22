@@ -97,7 +97,7 @@ def create_app(test_config=None):
         storage_uri="memory://"
     )
 
-    CORS(app, resources={r"/api/*": {"origins": ["https://tu-frontend.vercel.app", "http://localhost:5173"]}})
+    CORS(app, resources={r"/api/*": {"origins": ["https://cool-pics-frontend-m0oyw6j3v-luis-amars-projects.vercel.app", "http://localhost:5173"]}})
     db.init_app(app)
     jwt.init_app(app)
 
