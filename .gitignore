@@ -1,0 +1,42 @@
+# Entorno virtual
+venv/
+env/
+.env
+*.env
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Archivos de desarrollo
+*.log
+*.pid
+*.seed
+*.sqlite3
+*.db
+
+# Carpeta de uploads
+uploads/
+
+# Archivos generados por editores o SO
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.swn
+
+# Archivos de pruebas o cobertura
+.coverage
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Archivos de configuración local
+instance/
+*.local
