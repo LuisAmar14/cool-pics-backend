@@ -763,6 +763,9 @@ def create_app(test_config=None):
             db.session.rollback()
             print(f"Unexpected error: {str(e)}")
             return jsonify({'message': f'Error al actualizar el perfil: {str(e)}'}), 500
+    @app.route('/', methods=['GET', 'HEAD'])
+    def health_check():
+        return jsonify({"message": "Backend is running"}), 200
 
     return app
 app = create_app()
